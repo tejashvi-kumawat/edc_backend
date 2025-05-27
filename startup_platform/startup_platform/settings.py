@@ -6,7 +6,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 SECRET_KEY = 'django-insecure-your-secret-key-here'
 
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['localhost', '127.0.0.1', '*','edc-backend.onrender.com']
 
@@ -113,6 +113,7 @@ CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",
     "http://127.0.0.1:3000",
     "https://edc-backend.onrender.com",
+    "https://edc-app-blond.vercel.app",
 ]
 CSRF_TRUSTED_ORIGINS = [
     "https://edc-backend.onrender.com",
