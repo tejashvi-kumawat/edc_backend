@@ -6,9 +6,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 SECRET_KEY = 'django-insecure-your-secret-key-here'
 
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1', '*',]
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', '*','edc-backend.onrender.com']
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -112,6 +112,10 @@ SIMPLE_JWT = {
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",
     "http://127.0.0.1:3000",
+    "https://edc-backend.onrender.com",
+]
+CSRF_TRUSTED_ORIGINS = [
+    "https://edc-backend.onrender.com",
 ]
 
 CORS_ALLOW_CREDENTIALS = True
